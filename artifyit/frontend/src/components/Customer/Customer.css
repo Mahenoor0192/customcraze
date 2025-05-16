@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&display=swap');
+
+/* Overall App Styling */
+.app1 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(287deg, rgba(213, 65, 226, 0.1) 8.73%, rgba(213, 65, 226, 0) 50.04%),
+        radial-gradient(112.74% 70.32% at 7.01% 8.24%, rgba(100, 218, 255, 0.2) 0%,
+            rgba(100, 218, 255, 0.05) 47.87%, rgba(100, 218, 255, 0) 100%),
+        radial-gradient(57.44% 56.58% at 67.5% 61.03%, rgba(15, 255, 212, 0.25) 0%,
+            rgba(15, 224, 246, 0.25) 0.01%, rgba(15, 224, 246, 0.22) 18.23%, rgba(15, 169, 255, 0.09) 100%),
+        rgb(8, 12, 24);
+    background-position: center;
+    color: white;
+    padding-top: 2840px;
+    /* Adjusted padding */
+}
+
+.app-body {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    height: calc(100vh - 80px);
+    /* Adjust height based on header */
+    width: 100vw;
+}
+
+/* Navbar Styling */
+/* nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;Ensures it stays on top
+    background: rgba(8, 12, 24, 0.9);
+    padding: 10px 20px;
+    color: white;
+} */
+
+/* Aligning Carousel and Hero */
+.carousel-container,
+.hero-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carousel-container {
+    padding-right: 30px;
+    /* Add space between carousel and hero */
+}
+
+.hero-container {
+    padding-left: 30px;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: auto;
+    background: rgba(8, 12, 24, 0.9);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+/* Body reset */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Background Abstract */
+.background-abstract {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(65, 72, 226, 0.3) 0%, rgba(0, 128, 255, 0.3) 40%, rgba(15, 111, 255, 0.2) 100%);
+    overflow: hidden;
+}
+
+.background-abstract::before,
+.background-abstract::after {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle at center, rgba(255, 0, 150, 0.2) 0%, rgba(255, 0, 150, 0) 100%);
+    filter: blur(100px);
+    z-index: 1;
+}
+
+.background-abstract::before {
+    top: -100px;
+    left: -100px;
+}
+
+.background-abstract::after {
+    bottom: -150px;
+    right: -150px;
+}
+
+/* Gradient Layer */
+.sleek-gradient-layer {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+    border-radius: 20px;
+    z-index: 2;
+}
+
+/* Content Container */
+.content-container {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: white;
+}
+
+.content-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.content-container p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+}
+
+.imghover {
+    -webkit-transition: transform 0.3s ease;
+    /* Safari */
+    /* display: inline-block; */
+    height: 400px;
+    width: 1200px;
+}
+
+.imghover:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    /* Safari */
+}
